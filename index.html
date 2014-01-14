@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Md simple editor by rderoldan1</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Md simple editor</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/rderoldan1/md_simple_editor">View the Project on GitHub <small>rderoldan1/md_simple_editor</small></a></p>
+        <ul>
+          <li><a href="https://github.com/rderoldan1/md_simple_editor/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/rderoldan1/md_simple_editor/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/rderoldan1/md_simple_editor">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="markdown-simple-editor" class="anchor" href="#markdown-simple-editor"><span class="octicon octicon-link"></span></a>MarkDown Simple Editor</h1>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem "font-awesome-rails"
+gem 'md_simple_editor'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle install
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install font-awesome-rails"
+$ gem install md_simple_editor
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>In your <code>application.css</code>, include the css files:</p>
+
+<pre><code>*= require font-awesome
+*= require md_simple_editor
+</code></pre>
+
+<p>In your <code>application.js</code>, include the javascript files:</p>
+
+<pre><code>//= require md_simple_editor
+</code></pre>
+
+<h3>
+<a name="helper" class="anchor" href="#helper"><span class="octicon octicon-link"></span></a>Helper</h3>
+
+<p>There are a helper that make your textarea works like a <em>text editor :D</em></p>
+
+<pre lang="rails"><code>&lt;%= md_simple_editor  do %&gt;
+    &lt;%= text_area_tag "your id" %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<p>Also you can use inside a form</p>
+
+<pre lang="rails"><code>&lt;%= form_for @user do |f|
+    &lt;%= md_simple_editor  do %&gt;
+        &lt;%= f.text_area :description %&gt;
+    &lt;% end %&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<h2>
+<a name="how-it-looks" class="anchor" href="#how-it-looks"><span class="octicon octicon-link"></span></a>How it looks?</h2>
+
+<p><img src="http://i.imgur.com/68DXCwP.png" alt="Imgur"></p>
+
+<h2>
+<a name="todo" class="anchor" href="#todo"><span class="octicon octicon-link"></span></a>ToDo</h2>
+
+<ul>
+<li>Improve css</li>
+<li>Add functions to extend the toolbar</li>
+</ul><h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/rderoldan1">rderoldan1</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
