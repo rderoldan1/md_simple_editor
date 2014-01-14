@@ -1,6 +1,6 @@
-# MdSimpleEditor
+# MarkDown Simple Editor
 
-TODO: Write a gem description
+
 
 ## Installation
 
