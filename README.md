@@ -6,19 +6,57 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
+    gem "font-awesome-rails"
     gem 'md_simple_editor'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
+    $ gem install font-awesome-rails"
     $ gem install md_simple_editor
 
 ## Usage
 
-TODO: Write usage instructions here
+In your `application.css`, include the css files:
+
+    *= require font-awesome
+    *= require md_simple_editor
+
+In your `application.js`, include the javascript files:
+
+    //= require md_simple_editor
+
+### Helper
+
+There are a helper that make your textarea works like a _text editor :D_
+
+```ruby
+    <%= md_simple_editor  do %>
+        <%= text_area_tag "your id" %>
+    <% end %>
+```
+Also you can use inside a form
+```ruby
+    <%= form_for @user do |f|
+        <%= md_simple_editor  do %>
+            <%= f.text_area :description %>
+        <% end %>
+    <% end %>
+```
+
+## How it looks?
+
+[Imgur](http://i.imgur.com/68DXCwP)
+
+
+## ToDo
+
+- Improve css
+- Add functions to extend the toolbar
+
 
 ## Contributing
 
