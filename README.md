@@ -33,23 +33,23 @@ In your `application.js`, include the javascript files:
 
 There are a helper that make your textarea works like a _text editor :D_
 
-```ruby
-    <%= md_simple_editor  do %>
-        <%= text_area_tag "your id" %>
-    <% end %>
+```rails
+<%= md_simple_editor  do %>
+    <%= text_area_tag "your id" %>
+<% end %>
 ```
 Also you can use inside a form
-```ruby
-    <%= form_for @user do |f|
-        <%= md_simple_editor  do %>
-            <%= f.text_area :description %>
-        <% end %>
+```rails
+<%= form_for @user do |f|
+    <%= md_simple_editor  do %>
+        <%= f.text_area :description %>
     <% end %>
+<% end %>
 ```
 
 ## How it looks?
 
-[Imgur](http://i.imgur.com/68DXCwP)
+![Imgur](http://i.imgur.com/68DXCwP.png)
 
 
 ## ToDo
