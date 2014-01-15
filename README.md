@@ -56,6 +56,7 @@ Also you can use inside a form
 
 - Improve css
 - Add functions to extend the toolbar
+- Add preview option
 
 
 ## Contributing

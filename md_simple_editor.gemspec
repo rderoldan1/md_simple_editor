@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["rderoldan1@gmail.com"]
   spec.description   = %q{Simple editor for markdown and rails}
   spec.summary       = %q{Simple editor for markdown and rails}
-  spec.homepage      = ""
+  spec.homepage      = "http://rderoldan1.github.io/md_simple_editor/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -37,6 +37,21 @@
         color: #333;
         background-color: #fff;
         border-color: #ccc;
+        &:hover{
+          color: white;
+          text-decoration: none;
+          text-shadow: #ffff 0px -1px 0px;
+          background-color: #3072b3;
+          background-image: -webkit-linear-gradient(top, #599bcd, #3072b3);
+          background-image: -moz-linear-gradient(top, #599bcd, #3072b3);
+          background-image: linear-gradient(top, #599bcd, #3072b3);
+          border-color: #2a65a0;
+          background-repeat: repeat no-repeat;
+        }
+
+        &:hover, &:focus, &:active{
+          outline: 0;     outline-style:none;     outline-width:0;
+        }
 
       }
       &>.btn:first-child{
@@ -55,7 +70,6 @@
     }
   }
 }
-
 
 .markdown{
     font-family: Helvetica, arial, sans-serif;
