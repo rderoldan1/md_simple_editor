@@ -35,7 +35,7 @@ $ ->
           else if option == 'md_underline'
              "<u>Your undelined text here </u>"
           else if option == 'md_table'
-             "\n|Header|Header|Header|\n|:------|:-------:|------:|\n|Left aligment|Centered|right aligment|\n\n<br>"
+             "\n|Header|Header|Header|\n|:------|:-------:|------:|\n|Left alignment|Centered|Right alignment|\n\n<br>"
           else if option == 'md_minus'
              "\n<hr>\n"
           else if option == 'md_square'
