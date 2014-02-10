@@ -49,6 +49,14 @@ module MdSimpleEditor
               button_tag(:type => 'button', :class => "btn btn-default md_minus", :style => "font-size: 11px") do
                 fa_icon "minus"
               end
+            end +
+            content_tag(:div, :id => "btn-group") do
+              button_tag(:type => 'button', :class => "btn btn-default md_link", :style => "font-size: 11px") do
+                fa_icon "link"
+              end +
+              button_tag(:type => 'button', :class => "btn btn-default md_camera-retro", :style => "font-size: 11px") do
+                fa_icon "camera-retro"
+              end
             end
           end +
           content_tag(:div, :id => "md-text") do

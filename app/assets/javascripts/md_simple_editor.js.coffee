@@ -41,6 +41,10 @@ $ ->
           else if option == 'md_square'
              "\n\tjebdhwiedwef Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut aliquet velit. Nam fermentum, mi quis egestas ornare, massa velit pharetra ante, sed
                     pellentesque tortor nisl non quam. Nunc eget egestas orci.\n\n<br> "
+          else if option == 'md_link'
+            "\n[This is a link](http://google.com)\n"
+          else if option == 'md_camera-retro'
+            "\n![Alt](https://www.google.com.co/images/srpr/logo11w.png)\n"
 
     textarea = $('#md-editor #md-text textarea')
     insertAtCaret(textarea.attr('id'), text)
