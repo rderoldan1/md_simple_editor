@@ -49,7 +49,7 @@ Also you can use inside a form
 
 ## How it looks?
 
-![Imgur](http://i.imgur.com/68DXCwP.png)
+![Imgur](http://i.imgur.com/DFHqi6P.png)
 
 
 ## ToDo
