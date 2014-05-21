@@ -2,7 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$ ->
+md_simple_editor = () ->
+  alert('wnebd')
+	
   $('#md-toolbar #btn-group button').mousedown ->
     att_class = this.classList
     rgex = /md_/
@@ -76,3 +78,9 @@ insertAtCaret = (areaId, text) ->
     txtarea.selectionEnd = strPos
     txtarea.focus()
   txtarea.scrollTop = scrollPos
+  
+$(document).on 'page:load', ->
+	 md_simple_editor()
+	 
+$ ->  
+  md_simple_editor()
