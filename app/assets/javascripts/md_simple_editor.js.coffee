@@ -3,8 +3,6 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 md_simple_editor = () ->
-  alert('wnebd')
-	
   $('#md-toolbar #btn-group button').mousedown ->
     att_class = this.classList
     rgex = /md_/
