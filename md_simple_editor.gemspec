@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_runtime_dependency "font-awesome-rails", "~> 4.0.3.1"
+  spec.add_runtime_dependency "redcarpet", "~> 3.1.2"
 end
