@@ -61,10 +61,8 @@ Simple markdown editor meets Bootstrap, more elegant look and feel, !and now, th
 
 ## ToDo
 
-- Improve css
 - Add functions to extend the toolbar
-- Add preview option
-
+- Add some internationalization options
 
 ## Contributing
 
