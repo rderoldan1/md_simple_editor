@@ -47,9 +47,16 @@ Also you can use inside a form
 <% end %>
 ```
 
+
+#### Version 0.1.8
+
+Simple markdown editor meets Bootstrap, more elegant look and feel, !and now, the preview mode is OUT"
+
 ## How it looks?
 
-![Imgur](http://i.imgur.com/DFHqi6P.png)
+![Imgur](http://i.imgur.com/gg0MwlD.png)
+
+![Imgur](http://i.imgur.com/tX29Zvi.png)
 
 
 ## ToDo
