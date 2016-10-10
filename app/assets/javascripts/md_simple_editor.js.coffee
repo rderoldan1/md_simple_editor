@@ -51,16 +51,19 @@ md_simple_editor = () ->
       insertAtCaret(textarea.attr('id'), text)
 
 preview = ->
-  if $('#md-text').attr('hidden')
+  if $('#md-text').prop('hidden')
+    $('.preview_md').text('Preview')
     $('#md-text').removeAttr('hidden')
     $('.preview-panel').attr('hidden', 'true')
+    false
   else
-    $('#md-text').attr('hidden', 'true')
-    $('.preview-panel').removeAttr('hidden')
     $.post(
       '/md_simple_editor/preview',
-      {md:$('#md-text textarea').val()},
+      {md: $('#md-text textarea').val()},
       (data) ->
+        $('.preview_md').text('Editor')
+        $('#md-text').attr('hidden', 'true')
+        $('.preview-panel').removeAttr('hidden')
         $('#md-preview').html(data)
     )
 
@@ -94,5 +97,6 @@ insertAtCaret = (areaId, text) ->
 
 $(document).on 'turbolinks:load page:load ready', ->
   md_simple_editor()
+  $(document).off 'turbolinks:load page:load ready'
   $('.preview_md').click ->
     preview()
