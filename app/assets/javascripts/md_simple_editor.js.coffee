@@ -92,17 +92,7 @@ insertAtCaret = (areaId, text) ->
     txtarea.focus()
   txtarea.scrollTop = scrollPos
 
-
-$ ->
+$(document).on 'turbolinks:load page:load ready', ->
   md_simple_editor()
   $('.preview_md').click ->
     preview()
-
-
-$(document).on 'page:load', ->
-  md_simple_editor()
-  $('.preview_md').click ->
-    preview()
-
-
-
