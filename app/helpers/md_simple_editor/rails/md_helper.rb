@@ -14,31 +14,31 @@ module MdSimpleEditor
             end +
             content_tag(:div, :class => "btn-group") do
               button_tag(:type => 'button', :class => "btn btn-default md_italic") do
-                fa_icon "italic"
+                icon "italic"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_bold") do
-                fa_icon "bold"
+                icon "bold"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_list-ul") do
-                fa_icon "list-ul"
+                icon "list-ul"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_list-ol") do
-                fa_icon "list-ol"
+                icon "list-ol"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_indent") do
-                fa_icon "indent"
+                icon "indent"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_underline") do
-                fa_icon "underline"
+                icon "underline"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_table") do
-                fa_icon "table"
+                icon "table"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_square") do
-                fa_icon "square"
+                icon "square"
               end +
               button_tag(:type => 'button', :class => "btn btn-default md_minus") do
-                fa_icon "minus"
+                icon "minus"
               end
             end +
             content_tag(:div, class: 'btn-group pull-righ') do
