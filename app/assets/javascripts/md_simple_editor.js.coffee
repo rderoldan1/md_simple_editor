@@ -96,7 +96,7 @@ insertAtCaret = (areaId, text) ->
   txtarea.scrollTop = scrollPos
 
 initializeEditor = ->
-  md_simple_editor
+  md_simple_editor()
   $(document).off 'turbolinks:load page:load ready', initializeEditor
   $('.preview_md').click ->
     preview()
