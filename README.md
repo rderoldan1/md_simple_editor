@@ -6,7 +6,6 @@
 
 Add this line to your application's Gemfile:
 
-    gem "font-awesome-rails"
     gem 'md_simple_editor'
 
 And then execute:
@@ -15,14 +14,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install font-awesome-rails"
     $ gem install md_simple_editor
 
 ## Usage
 
 In your `application.css`, include the css files:
-
-    *= require font-awesome
+    
     *= require md_simple_editor
 
 In your `application.js`, include the javascript files:
@@ -46,7 +43,12 @@ Also you can use inside a form
     <% end %>
 <% end %>
 ```
-
+You can change the size of the buttons using bootstrap classes `btn-sm`, `btn-xs`, `btn-lg`
+```rails
+<%= md_simple_editor('btn-xs')  do %>
+    <%= text_area_tag "your id" %>
+<% end %>
+```
 
 #### Version 0.1.8
 
