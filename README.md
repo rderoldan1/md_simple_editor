@@ -8,6 +8,10 @@ Add this line to your application's Gemfile:
 
     gem 'md_simple_editor'
 
+If you don't have boostrap in your project add this line to your application's Gemfile:
+
+    gem 'bootstrap-sass', '~> 3.3.7'
+
 And then execute:
 
     $ bundle install
