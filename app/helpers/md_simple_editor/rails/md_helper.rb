@@ -14,7 +14,6 @@ module MdSimpleEditor
                   end
                 end
           end +
-              content_tag(:br) +
               content_tag(:div, :id => 'md-text') do
                 yield
               end +
