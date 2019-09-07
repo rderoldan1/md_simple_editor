@@ -6,6 +6,7 @@
 
 Add this line to your application's Gemfile:
 
+    gem 'font-awesome-rails'
     gem 'md_simple_editor'
 
 And then execute:
@@ -14,13 +15,20 @@ And then execute:
 
 Or install it yourself as:
 
+    $ gem install font-awesome-rails
     $ gem install md_simple_editor
 
 ## Usage
 
 In your `application.css`, include the css files:
     
+    *= require font-awesome
     *= require md_simple_editor
+    
+Or if you using SCSS, include in `application.css.scss`:
+    
+    @import "font-awesome";
+    @import "md_simple_editor";
 
 In your `application.js`, include the javascript files:
 
