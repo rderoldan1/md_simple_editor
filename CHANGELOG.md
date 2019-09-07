@@ -1,6 +1,10 @@
 
 #### [Current]
 
+### v.0.4.0
+*Changed*
+- Allow to use new versions of bootstrap
+- Update readme, fix space and improve font-awesome setup on readme, thanks [@dyuzz16](https://github.com/dyuzz16) 
 
 #### v0.1.8
  * [55adff2](../../commit/55adff2) - __(Ruben Espinosa)__ preview funcionality, bootstrap as css provider
