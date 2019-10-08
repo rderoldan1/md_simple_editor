@@ -1,6 +1,10 @@
 
 #### [Current]
 
+### v.0.5.0
+*Changed*
+- Use bootstrap 4 by default
+
 ### v.0.4.0
 *Changed*
 - Allow to use new versions of bootstrap
